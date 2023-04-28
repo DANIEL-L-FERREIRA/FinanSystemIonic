@@ -1,0 +1,7 @@
+{
+  "name": "FinanSystem",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
