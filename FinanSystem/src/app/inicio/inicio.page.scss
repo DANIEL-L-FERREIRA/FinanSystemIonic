@@ -1,0 +1,23 @@
+.inicio{
+    background-color: #76ddf2;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 22px;
+    color: #3a366e;
+    
+  }
+
+  .tela{
+    background: #76ddf2 !important;
+    
+  }
+
+  #background-content {
+    left: 0px;
+    right: 0px;
+    top: calc(var(--offset-top) * -1);
+    bottom: calc(var(--offset-bottom) * -1);
+    position: absolute;
+    background: #76ddf2;
+}
