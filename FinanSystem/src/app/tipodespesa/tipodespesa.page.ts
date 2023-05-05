@@ -4,13 +4,13 @@ import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 
 @Component({
-  selector: 'app-receita',
-  templateUrl: './receita.page.html',
-  styleUrls: ['./receita.page.scss'],
+  selector: 'app-tipodespesa',
+  templateUrl: './tipodespesa.page.html',
+  styleUrls: ['./tipodespesa.page.scss'],
   standalone: true,
   imports: [IonicModule, CommonModule, FormsModule]
 })
-export class ReceitaPage implements OnInit {
+export class TipodespesaPage implements OnInit {
 
   constructor() { }
 

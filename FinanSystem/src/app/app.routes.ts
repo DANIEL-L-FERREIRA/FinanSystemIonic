@@ -30,8 +30,34 @@ export const routes: Routes = [
     path: 'tiporeceita',
     loadComponent: () => import('./tiporeceita/tiporeceita.page').then( m => m.TiporeceitaPage)
   },
+
+
   {
-    path: 'receita',
-    loadComponent: () => import('./receita/receita.page').then( m => m.ReceitaPage)
+    path: 'lancarreceita',
+    loadComponent: () => import('./lancarreceita/lancarreceita.page').then( m => m.LancarreceitaPage)
+  },
+  {
+    path: 'baixareceber',
+    loadComponent: () => import('./baixareceber/baixareceber.page').then( m => m.BaixareceberPage)
+  },
+  {
+    path: 'contas-pagar',
+    loadComponent: () => import('./contas-pagar/contas-pagar.page').then( m => m.ContasPagarPage)
+  },
+  {
+    path: 'cadastrofornecedor',
+    loadComponent: () => import('./cadastrofornecedor/cadastrofornecedor.page').then( m => m.CadastrofornecedorPage)
+  },
+  {
+    path: 'tipodespesa',
+    loadComponent: () => import('./tipodespesa/tipodespesa.page').then( m => m.TipodespesaPage)
+  },
+  {
+    path: 'lancardespesa',
+    loadComponent: () => import('./lancardespesa/lancardespesa.page').then( m => m.LancardespesaPage)
+  },
+  {
+    path: 'baixapagar',
+    loadComponent: () => import('./baixapagar/baixapagar.page').then( m => m.BaixapagarPage)
   },
 ];
