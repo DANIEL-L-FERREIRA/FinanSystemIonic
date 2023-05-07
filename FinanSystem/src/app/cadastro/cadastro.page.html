@@ -1,67 +1,71 @@
 <ion-header>
 
-
- 
   <ion-row>
-  <ion-col size="3" class="botao">
-    <ion-button expand="full" color="tertiary">INCLUIR</ion-button>
+  <ion-col class="botao">
+    <ion-button expand="full" class="botao">
+      <ion-icon slot="start" name="add-outline"></ion-icon>INCLUIR</ion-button>
   </ion-col>
-  <ion-col size="3" class="botao">
-    <ion-button expand="full" color="tertiary">ALTERAR</ion-button>
+  <ion-col class="botao">
+    <ion-button expand="full" class="botao">
+      <ion-icon slot="start" name="pencil-outline"></ion-icon>ALTERAR</ion-button>
   </ion-col>
-  <ion-col size="3" class="botao">
-    <ion-button expand="full" color="tertiary">EXCLUIR</ion-button>
+  <ion-col class="botao">
+    <ion-button expand="full" class="botao">
+      <ion-icon slot="start" name="trash-outline"></ion-icon>EXCLUIR</ion-button>
   </ion-col>
-  <ion-col size="3" class="botao">
-    <ion-button expand="full" color="tertiary">LISTAR</ion-button>
+  <ion-col class="botao">
+    <ion-button expand="full" class="botao">
+      <ion-icon slot="start" name="list-outline"></ion-icon>LISTAR</ion-button>
   </ion-col>
-
-
-
 </ion-row>
 
 </ion-header>
+
+<ion-row>
+  <ion-col class="espaco-vazio">
+  </ion-col>
+</ion-row>
 
 <ion-content>
   <ion-row>
     <ion-col class="cadastro">
     CADASTRO DE USUÁRIO
-  </ion-col>
+    </ion-col>
   </ion-row>
 
-  
-    
-    <ion-row>
-      <ion-col size="3" class="danger">
-        COD. USUÁRIO
-        <ion-input class="campo"> </ion-input>
-      </ion-col>
+  <ion-row>
+    <ion-col size="12" class="danger">
+      CÓDIGO USUÁRIO
+      <ion-input class="campo"> </ion-input>
+    </ion-col>
+  </ion-row>
 
-      <ion-col size="9" class="danger">
-        NOME
-        <ion-input class="campo"> </ion-input>
-       </ion-col>
-    </ion-row>
+  <ion-row>
+    <ion-col size="12" class="danger">
+      NOME
+      <ion-input class="campo"> </ion-input>
+     </ion-col>
+  </ion-row> 
 
     <ion-row>
       <ion-col size="12" class="danger">
         SETOR
         <ion-input class="campo"> </ion-input>
       </ion-col>
-
-      
     </ion-row>    
     
     <ion-row>
-      <ion-col size="8" class="danger">
+      <ion-col size="12" class="danger">
         CPF
         <ion-input class="campo"> </ion-input>
       </ion-col>
+    </ion-row>
 
-      <ion-col size="4" class="danger">
+    <ion-row>
+      <ion-col size="12" class="danger">
         DATA NASCIMENTO
         <ion-input class="campo"> </ion-input>
-       </ion-col>
+      </ion-col>
     </ion-row>    
 
     <ion-row>
@@ -89,20 +93,27 @@
     <ion-row>
       <ion-col size="12" class="danger">
         SENHA 
-        <ion-input class="campo"> </ion-input>
+        <ion-input class="campo" type="password"> </ion-input>
       </ion-col>
-
     </ion-row>  
 
+  <ion-footer>
     
-
     <ion-row>
-      <ion-col size="6" class="botao">
-      <ion-button expand="full" color="tertiary">GRAVAR</ion-button>
-    </ion-col>
-         <ion-col size="6" class="botao">
-      <ion-button expand="full" color="tertiary">VOLTAR</ion-button>
-    </ion-col>
+      <ion-col class="botao">
+        <ion-button expand="full" class="botao">
+          <ion-icon slot="start" name="arrow-undo-outline"></ion-icon>
+          VOLTAR
+        </ion-button>
+      </ion-col>
+      <ion-col class="botao">
+        <ion-button expand="full" class="botao">
+          <ion-icon slot="start" name="save-outline"></ion-icon>
+           GRAVAR
+        </ion-button>
+      </ion-col>
     </ion-row>
+
+  </ion-footer>
   
   </ion-content>
