@@ -12,6 +12,18 @@ import { IonicModule } from '@ionic/angular';
 })
 export class CadastroPage implements OnInit {
 
+  public usuario = {
+    id: '',
+    nome : '',
+    setor: '',
+    cpf  : '',
+    dataNascimento : new Date(),
+    endereco: '',
+    tipoUsuario: '',
+    login: '',
+    senha: ''
+}
+
   constructor() { }
 
   ngOnInit() {
