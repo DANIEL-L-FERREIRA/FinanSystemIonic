@@ -1,0 +1,187 @@
+<ion-header>
+
+  <ion-row>
+  <ion-col class="botao">
+    <ion-button expand="full" class="botao">
+      <ion-icon slot="start" name="add-outline"></ion-icon>INCLUIR</ion-button>
+  </ion-col>
+  <ion-col class="botao">
+    <ion-button expand="full" class="botao">
+      <ion-icon slot="start" name="pencil-outline"></ion-icon>ALTERAR</ion-button>
+  </ion-col>
+  <ion-col class="botao">
+    <ion-button expand="full" class="botao">
+      <ion-icon slot="start" name="trash-outline"></ion-icon>EXCLUIR</ion-button>
+  </ion-col>
+  <ion-col class="botao">
+    <ion-button expand="full" class="botao">
+      <ion-icon slot="start" name="list-outline"></ion-icon>LISTAR</ion-button>
+  </ion-col>
+</ion-row>
+
+</ion-header>
+
+<ion-row>
+  <ion-col class="espaco-vazio">
+  </ion-col>
+</ion-row>
+
+<ion-content>
+  <ion-row>
+    <ion-col class="cadastro">
+    CADASTRO DE CLIENTES
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col size="12" class="danger">
+      ID CLIENTE
+      <ion-input class="campo"> </ion-input>
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col size="12" class="danger">
+      NOME DO CLIENTE
+      <ion-input class="campo"> </ion-input>
+     </ion-col>
+  </ion-row> 
+
+    <ion-row>
+      <ion-col size="12" class="danger">
+        CNPJ/CPF
+        <ion-input class="campo"> </ion-input>
+      </ion-col>
+    </ion-row>    
+    
+    <ion-row>
+      <ion-col size="12" class="danger">
+        ENDEREÇO
+        <ion-input class="campo"> </ion-input>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="12" class="danger">
+        TELEFONE
+        <ion-input class="campo"> </ion-input>
+      </ion-col>
+    </ion-row>    
+
+    <ion-row>
+      <ion-col size="12" class="danger">
+        CONTATO
+        <ion-input class="campo"> </ion-input>
+      </ion-col>
+    </ion-row>  
+
+    <ion-row>
+      <ion-col size="12" class="danger">
+        REGIME TRIBUTÁRIO
+        <ion-input class="campo"> </ion-input>
+      </ion-col>
+
+    </ion-row>   
+     
+    <ion-row>
+      <ion-col size="12" class="danger">
+        DATA NASCIMENTO/FUNDAÇÃO
+        <ion-input class="campo"> </ion-input>
+      </ion-col>
+    </ion-row>  
+
+    <ion-row>
+      <ion-col size="12" class="danger">
+        REFERÊNCIA
+        <ion-input class="campo"> </ion-input>
+      </ion-col>
+    </ion-row>  
+
+    <ion-row>
+      <ion-col size="12" class="danger">
+        OBSERVAÇÕES
+        <ion-input class="campo"> </ion-input>
+      </ion-col>
+    </ion-row>  
+
+  <ion-footer>
+    
+    <ion-row>
+      <ion-col class="botao">
+        <ion-button expand="full" class="botao">
+          <ion-icon slot="start" name="arrow-undo-outline"></ion-icon>
+          VOLTAR
+        </ion-button>
+      </ion-col>
+      <ion-col class="botao">
+        <ion-button expand="full" class="botao">
+          <ion-icon slot="start" name="save-outline"></ion-icon>
+           GRAVAR
+        </ion-button>
+      </ion-col>
+    </ion-row>
+
+  </ion-footer>
+  
+  </ion-content>
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Cadastro de Cliente</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+    <ion-list>
+      <ion-item>
+        <ion-label>ID</ion-label>
+        <ion-input [(ngModel)]="clienteData.id"></ion-input>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label>Nome</ion-label>
+        <ion-input [(ngModel)]="clienteData.nome"></ion-input>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label>CPF/CNPJ</ion-label>
+        <ion-input [(ngModel)]="clienteData.cpfCNPJ"></ion-input>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label>Endereço</ion-label>
+        <ion-input [(ngModel)]="clienteData.endereco"></ion-input>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label>Telefone</ion-label>
+        <ion-input [(ngModel)]="clienteData.telefone"></ion-input>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label>Contato</ion-label>
+        <ion-input [(ngModel)]="clienteData.contato"></ion-input>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label>Regime Tributário</ion-label>
+        <ion-input [(ngModel)]="clienteData.regimeTributario"></ion-input>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label>Data de Nascimento</ion-label>
+        <ion-datetime displayFormat="DD/MM/YYYY" [(ngModel)]="clienteData.dataNascimento"></ion-datetime>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label>Referência</ion-label>
+        <ion-input [(ngModel)]="clienteData.referencia"></ion-input>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label>Observações</ion-label>
+        <ion-textarea [(ngModel)]="clienteData.observacoes"></ion-textarea>
+      </ion-item>
+    </ion-list>
+  
+    <ion-button expand="full" (click)="cadastrarCliente()">Cadastrar Cliente</ion-button>
+  </ion-content>

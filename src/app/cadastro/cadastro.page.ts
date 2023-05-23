@@ -23,6 +23,11 @@ export class CadastroPage implements OnInit {
     login: '',
     senha: ''
 }
+cadastrar() {
+  // Lógica para salvar os dados do cadastro
+  console.log(this.cadastro);
+}
+
 
   constructor() { }
 

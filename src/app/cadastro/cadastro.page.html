@@ -117,3 +117,59 @@
   </ion-footer>
   
   </ion-content>
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Cadastro</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+    <ion-list>
+      <ion-item>
+        <ion-label>ID</ion-label>
+        <ion-input [(ngModel)]="cadastroUsuario.id"></ion-input>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label>Nome</ion-label>
+        <ion-input [(ngModel)]="cadastroUsuario.nome"></ion-input>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label>Setor</ion-label>
+        <ion-input [(ngModel)]="cadastroUsuario.setor"></ion-input>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label>CPF</ion-label>
+        <ion-input [(ngModel)]="cadastroUsuario.cpf"></ion-input>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label>Data de Nascimento</ion-label>
+        <ion-input [(ngModel)]="cadastroUsuario.dataNascimento"></ion-input>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label>Endereço</ion-label>
+        <ion-input [(ngModel)]="cadastroUsuario.endereco"></ion-input>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label>Tipo de Usuário</ion-label>
+        <ion-input [(ngModel)]="cadastroUsuario.tipoUsuario"></ion-input>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label>Login</ion-label>
+        <ion-input [(ngModel)]="cadastroUsuario.login"></ion-input>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label>Senha</ion-label>
+        <ion-input [(ngModel)]="cadastroUsuario.senha"></ion-input>
+      </ion-item>
+    </ion-list>
+  
+    <ion-button expand="full" (click)="cadastrar()">Cadastrar</ion-button>
+  </ion-content>
